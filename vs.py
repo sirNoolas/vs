@@ -153,7 +153,7 @@ def store():
 # =====================================================================
 
 print("This is the auto versioner made by sirNoolas")
-print("Versions ar given as: (Release.major.minor.bugfix) ")
+print("Versions are given as: (Release.major.minor.bugfix) ")
 print("v:0.3\n")
 print("type 'h' or 'help' for a list of possible commands")
 
