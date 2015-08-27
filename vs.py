@@ -118,16 +118,16 @@ def doInput(curVer):
         curVer[0] += 1
         curVer[1] = 0
         curVer[2] = 0
-	curVer[3] = 0
+        curVer[3] = 0
         store()
     elif (uIn == "major"):
         curVer[1] += 1
         curVer[2] = 0
-	curVer[3] = 0
+        curVer[3] = 0
         store()
     elif (uIn == "minor"):
         curVer[2] += 1
-	curVer[3] = 0
+        curVer[3] = 0
         store()
     elif (uIn == "b"):
         curVer[3] += 1
