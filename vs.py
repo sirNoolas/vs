@@ -95,7 +95,7 @@ def getInt(message):
 
 def tellCommands():
     print("The following commands can only be used when a version has been initialised:")
-    print("'release'/'major'/'minor'/'bug' - increase given version entry")
+    print("'release'/'major'/'minor'/'b (bug)' - increase given version entry")
     print("'history' - display the version history")
     print("'reset'   - delete version history and start with version 0.0.0.0")
     print("'exit'    - exit the program and store current version")
@@ -116,14 +116,20 @@ def doInput(curVer):
             print(file.read()) # this may cause memory overflow
     elif (uIn == "release"):
         curVer[0] += 1
+        curVer[1] = 0
+        curVer[2] = 0
+	curVer[3] = 0
         store()
     elif (uIn == "major"):
         curVer[1] += 1
+        curVer[2] = 0
+	curVer[3] = 0
         store()
     elif (uIn == "minor"):
         curVer[2] += 1
+	curVer[3] = 0
         store()
-    elif (uIn == "bug"):
+    elif (uIn == "b"):
         curVer[3] += 1
         store()
     elif (uIn.startswith('h')):
